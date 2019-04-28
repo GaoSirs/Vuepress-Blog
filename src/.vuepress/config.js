@@ -64,7 +64,12 @@ module.exports = {
                 text: '博客园',
                 link: 'https://www.cnblogs.com/gaosirs',
                 exact: false
-            }
+            },
+            {
+                text: '关于我',
+                link: '/about/',
+                exact: false
+            },
         ],
 
         // 评论设置
