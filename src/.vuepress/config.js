@@ -77,8 +77,8 @@ module.exports = {
             platform: 'github',
             owner: 'GaoSirs',
             repo: 'Vuepress-Blog',
-            clientId: 'xxx',
-            clientSecret: 'xxx',
+            clientId: '02a7a5006e86d2573e7e',
+            clientSecret: '245cc5034afc54d1d99a93051d9092c3465bf358',
             autoCreateIssue: process.env.NODE_ENV !== 'development'
         },
 
