@@ -180,7 +180,7 @@ The content below `more` will only be displayed when viewing this post, and will
 
 
 ### 最终效果
-![avatar](/Blog/images/details.png)
+![最终效果图](/Blog/images/details.png)
 
 
 ## 参考
