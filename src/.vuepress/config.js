@@ -2,6 +2,7 @@ module.exports = {
     theme: 'meteorlxy',
     title: '❤GaoSir 的个人博客',
     description: 'GaoSir 的个人博客',
+    base: '/Blog/',
     locales: {
         '/': {
             lang: 'zh-CN'

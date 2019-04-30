@@ -1,8 +1,8 @@
 ---
 layout: CustomLayout
-title: Welcome to my custom page
-aside: false
+title: 关于我
+aside: true
 ---
 
-# 关于我
-Contents here will be rendered in the `<Content />` component.
+## 关于我
+

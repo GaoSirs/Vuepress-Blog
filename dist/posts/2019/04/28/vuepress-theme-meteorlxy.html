@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>利用vuepress + vuepress-theme-meteorlxy 主题搭建博客! | ❤GaoSir 的个人博客</title>
+    <meta name="description" content="GaoSir 的个人博客">
+    <link rel="icon" href="/Blog/images/favicon.ico">
+    
+    <link rel="preload" href="/Blog/assets/css/0.styles.2aba16b9.css" as="style"><link rel="preload" href="/Blog/assets/js/app.73b331f4.js" as="script"><link rel="preload" href="/Blog/assets/js/3.fc4521a2.js" as="script"><link rel="preload" href="/Blog/assets/js/15.3878457a.js" as="script"><link rel="prefetch" href="/Blog/assets/js/1.06578fb8.js"><link rel="prefetch" href="/Blog/assets/js/10.5e12d166.js"><link rel="prefetch" href="/Blog/assets/js/11.782fcc31.js"><link rel="prefetch" href="/Blog/assets/js/12.829ba7e1.js"><link rel="prefetch" href="/Blog/assets/js/13.c7c916e0.js"><link rel="prefetch" href="/Blog/assets/js/14.54a3fefa.js"><link rel="prefetch" href="/Blog/assets/js/16.0f1a17c9.js"><link rel="prefetch" href="/Blog/assets/js/17.97f920d3.js"><link rel="prefetch" href="/Blog/assets/js/4.f273cee4.js"><link rel="prefetch" href="/Blog/assets/js/5.209732ac.js"><link rel="prefetch" href="/Blog/assets/js/6.fa0b8ed0.js"><link rel="prefetch" href="/Blog/assets/js/7.bea1171d.js"><link rel="prefetch" href="/Blog/assets/js/8.18e8be84.js"><link rel="prefetch" href="/Blog/assets/js/9.80d7e81e.js">
+    <link rel="stylesheet" href="/Blog/assets/css/0.styles.2aba16b9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-meteorlxy"><header class="header" data-v-0539f1bd><div data-v-39c72c19 data-v-0539f1bd><nav class="navbar" data-v-39c72c19><div class="container" data-v-39c72c19><a href="/Blog/" class="router-link-active" data-v-39c72c19><span class="navbar-site-name" data-v-39c72c19>
+          ❤GaoSir 的个人博客
+        </span></a> <div class="navbar-toggler" data-v-39c72c19><svg class="icon" style="font-size:1.2em;" data-v-39c72c19 data-v-39c72c19><title data-v-39c72c19 data-v-39c72c19>menu</title><use xlink:href="#icon-menu" data-v-39c72c19 data-v-39c72c19></use></svg></div> <div class="navbar-links" data-v-39c72c19><a href="/Blog/" class="navbar-link" data-v-39c72c19>
+            首页
+          </a><a href="/Blog/posts/" class="navbar-link router-link-active" data-v-39c72c19>
+            文章
+          </a><a href="https://www.cnblogs.com/gaosirs" target="_blank" rel="noopener noreferrer" class="navbar-link" data-v-39c72c19>
+            博客园
+          </a><a href="/Blog/about/" class="navbar-link" data-v-39c72c19>
+            关于我
+          </a></div></div></nav> <div class="navbar-holder" style="display:none;" data-v-39c72c19></div></div> <div class="banner" data-v-98d6aa8c data-v-0539f1bd data-v-0539f1bd><div class="container" data-v-98d6aa8c><div class="center" data-v-98d6aa8c><h1 data-v-98d6aa8c data-v-0539f1bd>
+          利用vuepress + vuepress-theme-meteorlxy 主题搭建博客!
+        </h1></div></div></div></header> <div class="container clearfix show-aside" data-v-6cd81e6a data-v-6cd81e6a><main class="main" data-v-6cd81e6a><div class="post" data-v-6cd81e6a data-v-6cd81e6a><section class="post-meta main-div" data-v-4e23451f><section class="post-date clearfix" data-v-4e23451f><span class="create-date" data-v-4e23451f>
+      发布时间 : 2019-04-28
+    </span> <!----></section> <section class="post-links" data-v-4e23451f><!----> <a href="/Blog/posts/2019/04/29/github-pages.html" class="post-link" data-v-4e23451f>
+      下一篇文章 : 利用Circle CI2.0自动化部署Github Pages!
+    </a></section></section> <article class="main-div"><div class="content default"><p>利用vuepress + vuepress-theme-meteorlxy 主题搭建博客</p> <h2 id="安装"><a href="#安装" aria-hidden="true" class="header-anchor">#</a> 安装</h2> <p>创建一个新项目 <code>my-blog</code></p> <div class="language-SH extra-class"><pre class="language-sh"><code><span class="token function">mkdir</span> my-blog
+<span class="token function">cd</span> my-blog
+</code></pre></div><p>安装<code>vuepress</code>并<code>vuepress-theme-meteorlxy</code>记得添加next标签以安装1.x版本：</p> <div class="language-SH extra-class"><pre class="language-sh"><code><span class="token function">npm</span> <span class="token function">install</span> vuepress@next vuepress-theme-meteorlxy@next
+</code></pre></div><p>创建<code>src/_posts</code> 等 Vuepress 的目录和配置文件。项目的结构如下：</p> <div class="language-SH extra-class"><pre class="language-sh"><code>my-blog
+├── src <span class="token comment"># 主文件夹</span>
+│   ├── .vuepress <span class="token comment"># 配置文件夹</span>
+│   │   ├── components <span class="token comment"># 自定义页面组件</span>
+│   │   ├── public <span class="token comment"># 放置静态文件，比如图片</span>
+│   │   ├── styles <span class="token comment"># 样式文件</span>
+│   │   └── config.js <span class="token comment"># vuepress 配置文件</span>
+│   ├── _posts <span class="token comment"># 文章文件夹</span>
+│   │   ├── xxx.md
+│   │    <span class="token punctuation">..</span>.
+│   └── about <span class="token comment"># 自定义页面文件夹</span>
+│       ├── index.md
+│       <span class="token punctuation">..</span>.
+└── package.json
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">TIP</p> <p><code>src/index.md</code>或<code>src/README.md</code>不是必需品。此主题将为您自动添加主页。</p></div> <p>将<code>script</code>字段添加到<code>package.json</code>：</p> <div class="language-SH extra-class"><pre class="language-sh"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;scripts&quot;</span><span class="token keyword">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;dev&quot;</span><span class="token keyword">:</span> <span class="token string">&quot;vuepress dev src&quot;</span>,
+    <span class="token string">&quot;build&quot;</span><span class="token keyword">:</span> <span class="token string">&quot;vuepress build src --dest dist&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="配置主题"><a href="#配置主题" aria-hidden="true" class="header-anchor">#</a> 配置主题</h3> <p>Config Vuepress和这个主题 <code>src/.vuepress/config.js</code> ：
+</p><details><summary>单击以展开示例配置</summary><p></p> <div class="language-SH extra-class"><pre class="language-sh"><code>module.exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    theme: <span class="token string">'meteorlxy'</span>,
+    title: <span class="token string">'❤GaoSir 的个人博客'</span>,
+    description: <span class="token string">'GaoSir 的个人博客'</span>,
+    locales: <span class="token punctuation">{</span>
+        <span class="token string">'/'</span><span class="token keyword">:</span> <span class="token punctuation">{</span>
+            lang: <span class="token string">'zh-CN'</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>,
+    head: <span class="token punctuation">[</span>
+        <span class="token punctuation">[</span><span class="token string">'link'</span>, <span class="token punctuation">{</span>
+            rel: <span class="token string">'icon'</span>,
+            href: <span class="token string">'/images/favicon.ico'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">]</span>,
+    // 主题设置
+    themeConfig: <span class="token punctuation">{</span>
+        // 主题语言
+        lang: Object.assign<span class="token punctuation">(</span>require<span class="token punctuation">(</span><span class="token string">'vuepress-theme-meteorlxy/lib/langs/zh-CN'</span><span class="token punctuation">)</span>, <span class="token punctuation">{</span>
+            prevPost: <span class="token string">'上一篇文章'</span>,
+            nextPost: <span class="token string">'下一篇文章'</span>,
+            notFound: <span class="token string">'哎呀，页面跑丢了！'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>,
+        // 个人信息设置
+        personalInfo: <span class="token punctuation">{</span>
+            nickname: <span class="token string">'GaoSir'</span>,
+            description: <span class="token string">'你若想要得到，就别只是期望。&lt;br/&gt; 人生短暂，经不起等待。'</span>,
+            email: <span class="token string">'gaosir_801@163.com'</span>,
+            location: <span class="token string">'深圳'</span>,
+            avatar: <span class="token string">'/images/tx.jpg'</span>,
+            sns: <span class="token punctuation">{</span>
+                github: <span class="token punctuation">{</span>
+                    account: <span class="token string">'Gaosirs'</span>,
+                    link: <span class="token string">'https://github.com/gaosirs'</span>,
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>,
+        // 头部设置
+        header: <span class="token punctuation">{</span>
+            background: <span class="token punctuation">{</span>
+                useGeo: true,
+            <span class="token punctuation">}</span>,
+            showTitle: true,
+        <span class="token punctuation">}</span>,
+        // 帖子的上次更新时间
+        lastUpdated: true,
+        // 导航栏设置
+        nav: <span class="token punctuation">[</span><span class="token punctuation">{</span>
+                text: <span class="token string">'首页'</span>,
+                link: <span class="token string">'/'</span>,
+                exact: <span class="token boolean">true</span>
+            <span class="token punctuation">}</span>,
+            <span class="token punctuation">{</span>
+                text: <span class="token string">'文章'</span>,
+                link: <span class="token string">'/posts/'</span>,
+                exact: <span class="token boolean">false</span>
+            <span class="token punctuation">}</span>,
+            <span class="token punctuation">{</span>
+                text: <span class="token string">'博客园'</span>,
+                link: <span class="token string">'https://www.cnblogs.com/gaosirs'</span>,
+                exact: <span class="token boolean">false</span>
+            <span class="token punctuation">}</span>,
+            <span class="token punctuation">{</span>
+                text: <span class="token string">'关于我'</span>,
+                link: <span class="token string">'/about/'</span>,
+                exact: <span class="token boolean">false</span>
+            <span class="token punctuation">}</span>,
+        <span class="token punctuation">]</span>,
+        // 评论设置
+        comments: <span class="token punctuation">{</span>
+            platform: <span class="token string">'github'</span>,
+            owner: <span class="token string">'xxx'</span>,
+            repo: <span class="token string">'xxx'</span>,
+            clientId: <span class="token string">'xxx'</span>,
+            clientSecret: <span class="token string">'xxx'</span>,
+            autoCreateIssue: process.env.NODE_ENV <span class="token operator">!=</span><span class="token operator">=</span> <span class="token string">'development'</span>
+        <span class="token punctuation">}</span>,
+        // 分页配置
+        pagination: <span class="token punctuation">{</span>
+            perPage: 5
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></details> <p>运行<code>script</code>以生成您的博客网站：</p> <div class="language-SH extra-class"><pre class="language-sh"><code><span class="token comment"># develop</span>
+<span class="token function">npm</span> run dev
+<span class="token comment"># build</span>
+<span class="token function">npm</span> run build
+</code></pre></div><h3 id="写第一篇帖子"><a href="#写第一篇帖子" aria-hidden="true" class="header-anchor">#</a> 写第一篇帖子</h3> <div class="language-SH extra-class"><pre class="language-sh"><code>---
+category: hello
+tags:
+  - world
+date: 2019-04-28
+title: Hello, world
+vssue-title: Hello, world
+---
+
+This is my first post.
+
+The content above <span class="token variable"><span class="token variable">`</span><span class="token function">more</span><span class="token variable">`</span></span> is the excerpt, <span class="token function">which</span> will be displayed <span class="token keyword">in</span> the posts list.
+
+The content below <span class="token variable"><span class="token variable">`</span><span class="token function">more</span><span class="token variable">`</span></span> will only be displayed when viewing this post, and will not be displayed <span class="token keyword">in</span> the posts list.
+</code></pre></div><h3 id="最终效果"><a href="#最终效果" aria-hidden="true" class="header-anchor">#</a> 最终效果</h3> <p><img src="/images/details.png" alt="avatar"></p> <h2 id="参考"><a href="#参考" aria-hidden="true" class="header-anchor">#</a> 参考</h2> <ul><li><a href="https://vuepress-theme-meteorlxy.meteorlxy.cn/" target="_blank" rel="noopener noreferrer">https://vuepress-theme-meteorlxy.meteorlxy.cn/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://v1.vuepress.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">https://v1.vuepress.vuejs.org/zh/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></article> <section class="post-meta main-div" data-v-4e23451f><section class="post-date clearfix" data-v-4e23451f><span class="create-date" data-v-4e23451f>
+      发布时间 : 2019-04-28
+    </span> <!----></section> <section class="post-links" data-v-4e23451f><!----> <a href="/Blog/posts/2019/04/29/github-pages.html" class="post-link" data-v-4e23451f>
+      下一篇文章 : 利用Circle CI2.0自动化部署Github Pages!
+    </a></section></section> <div id="post-comments" class="main-div"><!----></div></div></main> <aside class="aside" data-v-6cd81e6a><div class="info-card main-div" data-v-782646d4 data-v-6cd81e6a><div class="info-card-header" data-v-782646d4><img src="/images/tx.jpg" alt="GaoSir" class="info-avatar" data-v-782646d4></div> <div class="info-card-body" data-v-782646d4><section class="info-nickname" data-v-782646d4>
+      GaoSir
+    </section> <section class="info-desc" data-v-782646d4>你若想要得到，就别只是期望。<br/> 人生短暂，经不起等待。</section> <section class="info-contact" data-v-782646d4><section data-v-782646d4><span title="深圳" data-v-782646d4 data-v-782646d4><svg class="icon" style="font-size:1em;" data-v-782646d4 data-v-782646d4><title data-v-782646d4 data-v-782646d4>深圳</title><use xlink:href="#icon-location" data-v-782646d4 data-v-782646d4></use></svg><span class="info-text" data-v-782646d4 data-v-782646d4>
+          深圳
+        </span></span></section> <!----> <section data-v-782646d4><a href="mailto:gaosir_801@163.com" title="gaosir_801@163.com" data-v-782646d4 data-v-782646d4><svg class="icon" style="font-size:1em;" data-v-782646d4 data-v-782646d4><title data-v-782646d4 data-v-782646d4>gaosir_801@163.com</title><use xlink:href="#icon-email" data-v-782646d4 data-v-782646d4></use></svg><span class="info-text" data-v-782646d4 data-v-782646d4>
+          gaosir_801@163.com
+        </span></a></section></section></div> <div class="info-card-footer" data-v-782646d4><section class="info-sns clearfix" data-v-782646d4><a href="https://github.com/gaosirs" target="_blank" class="sns-link" data-v-782646d4><span title="GitHub: Gaosirs" class="sns-icon" data-v-782646d4 data-v-782646d4><svg class="icon" style="font-size:1.5em;" data-v-782646d4 data-v-782646d4><title data-v-782646d4 data-v-782646d4>GitHub: Gaosirs</title><use xlink:href="#icon-github" data-v-782646d4 data-v-782646d4></use></svg></span></a></section></div></div> <div class="post-nav-card main-div" style="position:relative;top:0;width:0px;" data-v-6cd81e6a><div class="post-nav-contents"><svg class="icon"><title>book</title><use xlink:href="#icon-book"></use></svg> <span>文章目录</span> <div class="post-nav-toc"> <ul><li><a href="/Blog/posts/2019/04/28/vuepress-theme-meteorlxy.html#安装">安装</a> <ul><li><a href="/Blog/posts/2019/04/28/vuepress-theme-meteorlxy.html#配置主题">配置主题</a> <!----></li><li><a href="/Blog/posts/2019/04/28/vuepress-theme-meteorlxy.html#写第一篇帖子">写第一篇帖子</a> <!----></li><li><a href="/Blog/posts/2019/04/28/vuepress-theme-meteorlxy.html#最终效果">最终效果</a> <!----></li></ul></li><li><a href="/Blog/posts/2019/04/28/vuepress-theme-meteorlxy.html#参考">参考</a> <!----></li></ul> </div></div> <div class="post-nav-comments"><svg class="icon"><title>comment</title><use xlink:href="#icon-comment"></use></svg> <a href="/Blog/posts/2019/04/28/vuepress-theme-meteorlxy.html#post-comments">
+      评论
+    </a></div></div></aside></div> <footer class="footer" data-v-1114308c><p class="sns-links" data-v-1114308c><a href="https://github.com/gaosirs" target="_blank" class="sns-link" data-v-1114308c><span title="GitHub: Gaosirs" class="sns-icon" data-v-1114308c data-v-1114308c><svg class="icon" style="font-size:25px;" data-v-1114308c data-v-1114308c><title data-v-1114308c data-v-1114308c>GitHub: Gaosirs</title><use xlink:href="#icon-github" data-v-1114308c data-v-1114308c></use></svg></span></a></p> <p data-v-1114308c><span data-v-1114308c>Powered by </span> <a href="https://vuepress.vuejs.org" target="_blank" data-v-1114308c>
+      Vuepress
+    </a></p></footer></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/Blog/assets/js/app.73b331f4.js" defer></script><script src="/Blog/assets/js/3.fc4521a2.js" defer></script><script src="/Blog/assets/js/15.3878457a.js" defer></script>
+  </body>
+</html>
