@@ -30,7 +30,7 @@ module.exports = {
             description: '你若想要得到，就别只是期望。<br/> 人生短暂，经不起等待。',
             email: 'gaosir_801@163.com',
             location: '深圳',
-            avatar: '/images/tx.jpg',
+            avatar: '/Blog/images/tx.jpg',
             sns: {
                 github: {
                     account: 'Gaosirs',
