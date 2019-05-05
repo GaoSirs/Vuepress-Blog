@@ -85,7 +85,7 @@ module.exports = {
 
         // 分页配置
         pagination: {
-            perPage: 5
+            perPage: 10
         }
     }
 }
