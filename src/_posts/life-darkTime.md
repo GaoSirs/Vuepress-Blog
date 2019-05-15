@@ -7,9 +7,20 @@ date: 2019-05-07
 title: 《暗时间》 读书笔记!
 vssue-title: 《暗时间》 读书笔记!
 ---
+<style>
+	.content ol, 
+	.content ul {
+		font-size: 14px;
+		font-family:"Microsoft YaHei", Helvetica, "Meiryo UI", "Malgun Gothic", "Segoe UI", "Trebuchet MS", Monaco, monospace, Tahoma, STXihei, 华文细黑, STHeiti, "Helvetica Neue", "Droid Sans", "wenquanyi micro hei", FreeSans, Arimo, Arial, SimSun, 宋体, Heiti, 黑体, sans-serif;
+	}
+	.content blockquote {
+		font-size: 15px;
+	}
+</style>
+
 
 ## 前言
-> 每个人的生命都像沙漏，里面的沙子总量大致相当，不同的是，有的沙漏颈部很细，有的沙漏颈部很粗。
+> 每个人的生命都像沙漏，里面的沙子总量大致相当，不同的是，有的沙漏颈部很细，有的沙漏颈部很粗。  
 > 颈部很细的沙漏能够抓住每一粒时间之沙，即时沙子总量一样，也能拥有更长的生命
 
 <br/><br/>
